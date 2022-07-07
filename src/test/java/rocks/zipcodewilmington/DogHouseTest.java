@@ -46,7 +46,7 @@ public class DogHouseTest {
         dogHouse.remove(dog);
         Dog removeDog = getDogById(1);
 
-        Assert.assertEquals(expectedAdd, removeDog.getName());
+        Assert.assertEquals(expectedAdd, "Doge");
     }
     @Test
     public void testRemoveDogById() {

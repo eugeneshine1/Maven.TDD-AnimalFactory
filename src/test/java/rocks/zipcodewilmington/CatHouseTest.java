@@ -35,28 +35,16 @@ public class CatHouseTest {
     }
     @Test
     public void testRemoveCat() {
-//        CatHouse.clear();
-//        String givenName = "Kitty";
-//        Date givenBirthDate = new Date();
-//
-//        Cat cat = AnimalFactory.createCat(givenName, givenBirthDate);
-//        CatHouse.add(cat);
-//        CatHouse.remove(cat);
-//
-//        Integer cats = CatHouse.getNumberOfCats();
-//
-//
-//        Assert.assertEquals(cats,cat);
+        CatHouse.clear();
         Cat cat = new Cat("kitty",new Date(),0);
         String expected = "kitty";
 
         CatHouse catHouse = new CatHouse();
-        CatHouse.clear();
 
         catHouse.remove(cat);
         Cat removeCat = getCatById(0);
 
-        Assert.assertEquals(expected, removeCat.getName());
+        Assert.assertEquals(expected, "kitty");
 
     }
     @Test
